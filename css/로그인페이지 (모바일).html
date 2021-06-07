@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인페이지 모바일</title>
+    <link rel = "preconnect"href = "https://fonts.gstatic.com">
+<link href = "https://fonts.googleapis.com/css2? family = EB + Garamond & display = swap"rel = "스타일 시트">
+    <style>
+        * {margin: 0; padding: 0;}
+        li {list-style: none;}
+        a {text-decoration: none; color:#333; display: block;}
+        legend {position: absolute; left: -99999px;}
+        fieldset {border: 0;}
+
+        #form {
+            width: 375px;
+            height: 812px;
+            border: 1px solid #000;
+            /*background-color: green;*/
+            margin: 0 auto;
+        }
+        #form h2 {
+            font-family : 'EB Garamond', serif;
+            font-size: 50px;
+            text-align: center;
+            letter-spacing: 1px;
+            padding-top: 125px;
+            padding-bottom: 85px;
+        }
+        #form label {
+            position: absolute;
+            left: -99999px;
+        }
+      
+        
+        input[type="text"], input[type="password"]{
+            width: 275px;
+            height: 30px;
+            margin: 0 50px;
+            border: 0;
+            border-bottom: 1px solid #666;
+            font-size: 19px;
+            line-height: 30px;
+            color: #666;
+        }
+        input[type="text"] {
+            margin-bottom: 30px;
+        }
+        .info {
+            text-align: right;
+            margin-top: -20px;
+        }
+        .info a {
+            display: inline;
+            color: #ccc;
+            letter-spacing: -2.5px;
+        }
+        .info a:last-child{
+            margin-right: 50px;
+        }
+        .log button {
+            width: 275px;
+            height: 60px;
+            line-height: 60px;
+            font-size: 19px;
+            font-weight: bold;
+            background-color: #020202;
+            color: #fff;
+            border: 0;
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+        .log a {
+            color: #666;
+            text-align: right;
+            margin-right: 50px;
+            margin-top: 10px;
+            
+        }
+        .sns h3 {
+            text-align: center;
+            font-size: 19px;
+            color: #020202;
+            border-bottom: 2px solid #020202;
+            width: 103px;
+            margin: 30px auto;
+        }
+        .sns button{
+            background-color: #fff;
+            width: 215px;
+            height: 50px;
+            border: 2px solid #020202; 
+            border-radius: 40px;
+            text-align: center;
+            color: #020202;
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 80px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id=form>
+        <form action="" method="post" autocomplete="off">
+            <h2>BVLGARI</h2>
+            <fieldset>
+                <legend>개인정보</legend>
+
+                <div>
+                    <label>아이디</label>
+                    <input type="text" placeholder="아이디 입력">
+                </div>
+
+                <div>
+                    <label>비밀번호</label>
+                    <input type="text" placeholder="비밀번호 입력">
+                </div>
+
+                <div class="info">
+                    <a href="#">아이디 찾기</a>
+                    <a href="#">비밀번호 찾기</a>
+                </div>
+
+                <div class="log">
+                    <button>로그인</button>
+                    <a href="#">회원가입하기</a>
+                </div>
+
+                <div class="sns">
+                    <h3>SNS 로그인</h3>
+                    <button>네이버</button>
+                    <button>카카오톡</button>
+                </div>
+            </fieldset>
+        </form><!-- #form end -->
+    </div>
+</body>
+</html>
